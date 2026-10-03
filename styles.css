@@ -1,0 +1,257 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: Garamond, serif;
+  height: 100%;
+  background-color: #f8ecff;
+}
+
+button, input
+{
+  cursor: pointer;
+}
+
+#header
+{
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #412d58;
+  top: 0;
+  height: 5rem;
+  
+}
+
+#header-img
+{
+  width: 20%;
+}
+
+#nav-bar
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.nav-link
+{
+  text-decoration: none;
+  color: white;
+  padding-right: 4em;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover
+{
+  color: hsl(45, 100%, 61%);
+}
+
+main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1
+{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+#form
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+}
+#email
+{
+  width: 15rem;
+  height: 2rem;
+}
+#submit
+{
+  width: 10rem;
+  height: 2rem;
+  background-color: hsl(45, 100%, 61%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #412d58;
+}
+
+#submit:hover
+{
+  color: hsl(45, 100%, 61%);
+  background-color: #412d58;
+}
+
+#email, #submit
+{
+  font-family: inherit;
+}
+
+#features
+{
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+#features-text p
+{
+  padding-bottom: 1.3rem;
+}
+
+#features :first-child
+{
+  padding-top: 1rem;
+}
+
+#vid-container
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#video
+{
+  width: 25rem;
+  height: 15rem;
+}
+#prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.price
+{
+  height: 16em;
+  width: 18rem;
+  border: 1px solid black;
+  margin-bottom: 2.5rem;
+}
+
+
+.price .price-head
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  background-color: #412d58;
+}
+
+.price-head h2
+{
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.price-text 
+{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-text h3
+{
+  font-size: 2rem;
+  padding-top: 0.8rem;
+  text-align: center;
+}
+.price-text p
+{
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.price-text button
+{
+  margin-top: 2rem;
+  height: 2rem;
+  width: 8rem;
+  background-color: hsl(45, 100%, 61%);
+  border: 1px solid #412d58;
+}
+
+.price-text button:hover
+{
+  color: hsl(45, 100%, 61%);
+  background-color: #412d58;
+}
+#footer
+{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  background-color: #d8cbe9;
+  padding-right: 1rem;
+}
+
+#footer-top
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#footer-top a
+{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0.3rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+#footer-top a:hover
+{
+  color: hsl(44, 100%, 36%);
+}
+
+#footer-bottom
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+@media (max-width: 800px)
+{
+  #header
+  {
+    height: auto;
+    min-height: 5rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    flex-wrap: wrap;
+  }
+  #prices
+  {
+    grid-template-columns: 1fr;
+  }
+
+}
